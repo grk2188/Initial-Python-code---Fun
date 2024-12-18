@@ -1,0 +1,19 @@
+
+
+''' Calculate nCr Binomial coefficient for n & r.'''
+
+def factorial(n):
+    fact = 1
+    for i in range(1, n+1):
+        fact *= i
+    return fact
+n = int(input("Enter N value: "))
+r = int(input("Enter R Value: "))
+p = (n-r)
+Cn = factorial(n)
+Cr = factorial(r)
+Cp = factorial(p)
+
+''' nCr = n! / r! (n-r)!
+result = int(Cn / (Cr * Cp))
+print(result)
